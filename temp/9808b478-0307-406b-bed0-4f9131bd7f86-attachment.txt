@@ -1,0 +1,18 @@
+====== request details ======
+url: https://dev-api.askstarry.com/ble/app/auth/login
+method: POST
+params: {}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "version": "1.1.2",
+    "HRUN-Request-ID": "HRUN-558bc74b-1a04-46fa-9f80-4f487651034a-251255"
+}
+json: {
+    "email": "zelun.su@amperetime.com",
+    "password": "L5nwBLr4dqAttUQsO9YuBKcu0FUYZIQmpPJL0D9LBDgNQsFCTV+d2Lhn+WMZiAdT1MAcEBUCQu+gsIUXrw6NLSA2/rTY4/A9FwHoSI8cw0onBZAxtde33chL97GXkiEqsDz4Nngf12svpVrUY0TRr+FQyRo0Fd0eesqfGptRxeF5r5HVJvjsc+nO6mAQAO8DIuWKWddwig9GnZcEUYDmENVy4UWOjl9/SBZ/Pb+7nr8h91wIPNRg2E07rfzOAE25v7Fz0Cr8ULOWYUZDcqz7VqgNC7/OuOUWRKtM/XF1w375qZ94S09UeEJowaSeA5o6qimLD0iHsRlVNN/K4EyvTg==",
+    "login_type": 1
+}

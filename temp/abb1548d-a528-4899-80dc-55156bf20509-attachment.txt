@@ -1,0 +1,422 @@
+2024-05-06 15:57:30.654 | INFO | run step begin: 获取版本信息 >>>>>>
+2024-05-06 15:57:30.748 | INFO | Start to run testcase: 获取版本信息, TestCase ID: 558bc74b-1a04-46fa-9f80-4f487651034a
+2024-05-06 15:57:30.750 | INFO | run step begin: 获取版本信息 >>>>>>
+2024-05-06 15:57:30.750 | INFO | run step begin: 获取版本信息 >>>>>>
+2024-05-06 15:57:30.751 | DEBUG | ====== request details ======
+url: https://dev-api.askstarry.com/ble/app/version
+method: GET
+params: {}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "HRUN-Request-ID": "HRUN-558bc74b-1a04-46fa-9f80-4f487651034a-250751"
+}
+json: None
+
+2024-05-06 15:57:30.751 | DEBUG | ====== request details ======
+url: https://dev-api.askstarry.com/ble/app/version
+method: GET
+params: {}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "HRUN-Request-ID": "HRUN-558bc74b-1a04-46fa-9f80-4f487651034a-250751"
+}
+json: None
+
+2024-05-06 15:57:31.244 | DEBUG | client IP: 192.168.30.30, Port: 52612
+2024-05-06 15:57:31.244 | DEBUG | client IP: 192.168.30.30, Port: 52612
+2024-05-06 15:57:31.244 | DEBUG | server IP: 47.251.65.112, Port: 443
+2024-05-06 15:57:31.244 | DEBUG | server IP: 47.251.65.112, Port: 443
+2024-05-06 15:57:31.245 | DEBUG | 
+================== request details ==================
+method   : GET
+url      : https://dev-api.askstarry.com/ble/app/version
+headers  : {
+    "User-Agent": "python-requests/2.31.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-558bc74b-1a04-46fa-9f80-4f487651034a-250751"
+}
+cookies  : {}
+body     : None
+
+2024-05-06 15:57:31.245 | DEBUG | 
+================== request details ==================
+method   : GET
+url      : https://dev-api.askstarry.com/ble/app/version
+headers  : {
+    "User-Agent": "python-requests/2.31.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-558bc74b-1a04-46fa-9f80-4f487651034a-250751"
+}
+cookies  : {}
+body     : None
+
+2024-05-06 15:57:31.245 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:31 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "221",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "code": 200,
+    "message": "成功",
+    "timestamp": "2024-05-06 15:57:31",
+    "data": {
+        "is_forced": 0,
+        "version_num": "1.1.2",
+        "apple_store": null,
+        "google_store": null,
+        "description": "测试一下",
+        "id": 4
+    }
+}
+
+2024-05-06 15:57:31.245 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:31 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "221",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "code": 200,
+    "message": "成功",
+    "timestamp": "2024-05-06 15:57:31",
+    "data": {
+        "is_forced": 0,
+        "version_num": "1.1.2",
+        "apple_store": null,
+        "google_store": null,
+        "description": "测试一下",
+        "id": 4
+    }
+}
+
+2024-05-06 15:57:31.245 | INFO | status_code: 200, response_time(ms): 491.98 ms, response_length: 0 bytes
+2024-05-06 15:57:31.245 | INFO | status_code: 200, response_time(ms): 491.98 ms, response_length: 0 bytes
+2024-05-06 15:57:31.246 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:31 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "221",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+body: {
+    "code": 200,
+    "message": "成功",
+    "timestamp": "2024-05-06 15:57:31",
+    "data": {
+        "is_forced": 0,
+        "version_num": "1.1.2",
+        "apple_store": null,
+        "google_store": null,
+        "description": "测试一下",
+        "id": 4
+    }
+}
+
+2024-05-06 15:57:31.246 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:31 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "221",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+body: {
+    "code": 200,
+    "message": "成功",
+    "timestamp": "2024-05-06 15:57:31",
+    "data": {
+        "is_forced": 0,
+        "version_num": "1.1.2",
+        "apple_store": null,
+        "google_store": null,
+        "description": "测试一下",
+        "id": 4
+    }
+}
+
+2024-05-06 15:57:31.246 | INFO | extract mapping: {'version': '1.1.2'}
+2024-05-06 15:57:31.246 | INFO | extract mapping: {'version': '1.1.2'}
+2024-05-06 15:57:31.246 | INFO | assert status_code equal 200(int)	==> pass
+2024-05-06 15:57:31.246 | INFO | assert status_code equal 200(int)	==> pass
+2024-05-06 15:57:31.247 | INFO | assert body.message equal 成功(str)	==> pass
+2024-05-06 15:57:31.247 | INFO | assert body.message equal 成功(str)	==> pass
+2024-05-06 15:57:31.247 | INFO | assert body.data contains version_num(str)	==> pass
+2024-05-06 15:57:31.247 | INFO | assert body.data contains version_num(str)	==> pass
+2024-05-06 15:57:31.247 | INFO | run step end: 获取版本信息 <<<<<<
+
+2024-05-06 15:57:31.247 | INFO | run step end: 获取版本信息 <<<<<<
+
+2024-05-06 15:57:31.248 | INFO | generate testcase log: C:\Users\A1\PycharmProjects\Bluetooth App\lt\logs\558bc74b-1a04-46fa-9f80-4f487651034a.run.log
+2024-05-06 15:57:31.248 | INFO | generate testcase log: C:\Users\A1\PycharmProjects\Bluetooth App\lt\logs\558bc74b-1a04-46fa-9f80-4f487651034a.run.log
+2024-05-06 15:57:31.254 | INFO | export variables: {'version': '1.1.2'}
+2024-05-06 15:57:31.254 | INFO | export variables: {'version': '1.1.2'}
+2024-05-06 15:57:31.254 | INFO | run step end: 获取版本信息 <<<<<<
+
+2024-05-06 15:57:31.254 | INFO | run step end: 获取版本信息 <<<<<<
+
+2024-05-06 15:57:31.254 | INFO | run step begin: 登录 >>>>>>
+2024-05-06 15:57:31.254 | INFO | run step begin: 登录 >>>>>>
+2024-05-06 15:57:31.255 | DEBUG | ====== request details ======
+url: https://dev-api.askstarry.com/ble/app/auth/login
+method: POST
+params: {}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "version": "1.1.2",
+    "HRUN-Request-ID": "HRUN-558bc74b-1a04-46fa-9f80-4f487651034a-251255"
+}
+json: {
+    "email": "zelun.su@amperetime.com",
+    "password": "L5nwBLr4dqAttUQsO9YuBKcu0FUYZIQmpPJL0D9LBDgNQsFCTV+d2Lhn+WMZiAdT1MAcEBUCQu+gsIUXrw6NLSA2/rTY4/A9FwHoSI8cw0onBZAxtde33chL97GXkiEqsDz4Nngf12svpVrUY0TRr+FQyRo0Fd0eesqfGptRxeF5r5HVJvjsc+nO6mAQAO8DIuWKWddwig9GnZcEUYDmENVy4UWOjl9/SBZ/Pb+7nr8h91wIPNRg2E07rfzOAE25v7Fz0Cr8ULOWYUZDcqz7VqgNC7/OuOUWRKtM/XF1w375qZ94S09UeEJowaSeA5o6qimLD0iHsRlVNN/K4EyvTg==",
+    "login_type": 1
+}
+
+2024-05-06 15:57:31.255 | DEBUG | ====== request details ======
+url: https://dev-api.askstarry.com/ble/app/auth/login
+method: POST
+params: {}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "version": "1.1.2",
+    "HRUN-Request-ID": "HRUN-558bc74b-1a04-46fa-9f80-4f487651034a-251255"
+}
+json: {
+    "email": "zelun.su@amperetime.com",
+    "password": "L5nwBLr4dqAttUQsO9YuBKcu0FUYZIQmpPJL0D9LBDgNQsFCTV+d2Lhn+WMZiAdT1MAcEBUCQu+gsIUXrw6NLSA2/rTY4/A9FwHoSI8cw0onBZAxtde33chL97GXkiEqsDz4Nngf12svpVrUY0TRr+FQyRo0Fd0eesqfGptRxeF5r5HVJvjsc+nO6mAQAO8DIuWKWddwig9GnZcEUYDmENVy4UWOjl9/SBZ/Pb+7nr8h91wIPNRg2E07rfzOAE25v7Fz0Cr8ULOWYUZDcqz7VqgNC7/OuOUWRKtM/XF1w375qZ94S09UeEJowaSeA5o6qimLD0iHsRlVNN/K4EyvTg==",
+    "login_type": 1
+}
+
+2024-05-06 15:57:31.472 | DEBUG | client IP: 192.168.30.30, Port: 52612
+2024-05-06 15:57:31.472 | DEBUG | client IP: 192.168.30.30, Port: 52612
+2024-05-06 15:57:31.473 | DEBUG | server IP: 47.251.65.112, Port: 443
+2024-05-06 15:57:31.473 | DEBUG | server IP: 47.251.65.112, Port: 443
+2024-05-06 15:57:31.473 | DEBUG | 
+================== request details ==================
+method   : POST
+url      : https://dev-api.askstarry.com/ble/app/auth/login
+headers  : {
+    "User-Agent": "python-requests/2.31.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "version": "1.1.2",
+    "HRUN-Request-ID": "HRUN-558bc74b-1a04-46fa-9f80-4f487651034a-251255",
+    "Content-Length": "413",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {
+    "email": "zelun.su@amperetime.com",
+    "password": "L5nwBLr4dqAttUQsO9YuBKcu0FUYZIQmpPJL0D9LBDgNQsFCTV+d2Lhn+WMZiAdT1MAcEBUCQu+gsIUXrw6NLSA2/rTY4/A9FwHoSI8cw0onBZAxtde33chL97GXkiEqsDz4Nngf12svpVrUY0TRr+FQyRo0Fd0eesqfGptRxeF5r5HVJvjsc+nO6mAQAO8DIuWKWddwig9GnZcEUYDmENVy4UWOjl9/SBZ/Pb+7nr8h91wIPNRg2E07rfzOAE25v7Fz0Cr8ULOWYUZDcqz7VqgNC7/OuOUWRKtM/XF1w375qZ94S09UeEJowaSeA5o6qimLD0iHsRlVNN/K4EyvTg==",
+    "login_type": 1
+}
+
+2024-05-06 15:57:31.473 | DEBUG | 
+================== request details ==================
+method   : POST
+url      : https://dev-api.askstarry.com/ble/app/auth/login
+headers  : {
+    "User-Agent": "python-requests/2.31.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "version": "1.1.2",
+    "HRUN-Request-ID": "HRUN-558bc74b-1a04-46fa-9f80-4f487651034a-251255",
+    "Content-Length": "413",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {
+    "email": "zelun.su@amperetime.com",
+    "password": "L5nwBLr4dqAttUQsO9YuBKcu0FUYZIQmpPJL0D9LBDgNQsFCTV+d2Lhn+WMZiAdT1MAcEBUCQu+gsIUXrw6NLSA2/rTY4/A9FwHoSI8cw0onBZAxtde33chL97GXkiEqsDz4Nngf12svpVrUY0TRr+FQyRo0Fd0eesqfGptRxeF5r5HVJvjsc+nO6mAQAO8DIuWKWddwig9GnZcEUYDmENVy4UWOjl9/SBZ/Pb+7nr8h91wIPNRg2E07rfzOAE25v7Fz0Cr8ULOWYUZDcqz7VqgNC7/OuOUWRKtM/XF1w375qZ94S09UeEJowaSeA5o6qimLD0iHsRlVNN/K4EyvTg==",
+    "login_type": 1
+}
+
+2024-05-06 15:57:31.474 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:31 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "363",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "code": 200,
+    "message": "成功",
+    "timestamp": "2024-05-06 15:57:31",
+    "data": {
+        "id": 45,
+        "uid": 900000059,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjkwMDAwMDA1OSwiZXhwIjoxNzUxMjcwMjUxLCJzdWIiOiJhY2Nlc3MifQ.NeYZhYyUKdRJpHIM8it58KCXirgRyMprnEQMmeKIsac",
+        "name": null,
+        "email": "zelun.su@amperetime.com",
+        "avatar_link": null,
+        "language": "zh"
+    }
+}
+
+2024-05-06 15:57:31.474 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:31 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "363",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "code": 200,
+    "message": "成功",
+    "timestamp": "2024-05-06 15:57:31",
+    "data": {
+        "id": 45,
+        "uid": 900000059,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjkwMDAwMDA1OSwiZXhwIjoxNzUxMjcwMjUxLCJzdWIiOiJhY2Nlc3MifQ.NeYZhYyUKdRJpHIM8it58KCXirgRyMprnEQMmeKIsac",
+        "name": null,
+        "email": "zelun.su@amperetime.com",
+        "avatar_link": null,
+        "language": "zh"
+    }
+}
+
+2024-05-06 15:57:31.474 | INFO | status_code: 200, response_time(ms): 216.94 ms, response_length: 0 bytes
+2024-05-06 15:57:31.474 | INFO | status_code: 200, response_time(ms): 216.94 ms, response_length: 0 bytes
+2024-05-06 15:57:31.474 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:31 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "363",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+body: {
+    "code": 200,
+    "message": "成功",
+    "timestamp": "2024-05-06 15:57:31",
+    "data": {
+        "id": 45,
+        "uid": 900000059,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjkwMDAwMDA1OSwiZXhwIjoxNzUxMjcwMjUxLCJzdWIiOiJhY2Nlc3MifQ.NeYZhYyUKdRJpHIM8it58KCXirgRyMprnEQMmeKIsac",
+        "name": null,
+        "email": "zelun.su@amperetime.com",
+        "avatar_link": null,
+        "language": "zh"
+    }
+}
+
+2024-05-06 15:57:31.474 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:31 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "363",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+body: {
+    "code": 200,
+    "message": "成功",
+    "timestamp": "2024-05-06 15:57:31",
+    "data": {
+        "id": 45,
+        "uid": 900000059,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjkwMDAwMDA1OSwiZXhwIjoxNzUxMjcwMjUxLCJzdWIiOiJhY2Nlc3MifQ.NeYZhYyUKdRJpHIM8it58KCXirgRyMprnEQMmeKIsac",
+        "name": null,
+        "email": "zelun.su@amperetime.com",
+        "avatar_link": null,
+        "language": "zh"
+    }
+}
+
+2024-05-06 15:57:31.475 | INFO | extract mapping: {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjkwMDAwMDA1OSwiZXhwIjoxNzUxMjcwMjUxLCJzdWIiOiJhY2Nlc3MifQ.NeYZhYyUKdRJpHIM8it58KCXirgRyMprnEQMmeKIsac'}
+2024-05-06 15:57:31.475 | INFO | extract mapping: {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjkwMDAwMDA1OSwiZXhwIjoxNzUxMjcwMjUxLCJzdWIiOiJhY2Nlc3MifQ.NeYZhYyUKdRJpHIM8it58KCXirgRyMprnEQMmeKIsac'}
+2024-05-06 15:57:31.479 | INFO | assert status_code equal 200(int)	==> pass
+2024-05-06 15:57:31.479 | INFO | assert status_code equal 200(int)	==> pass
+2024-05-06 15:57:31.479 | INFO | assert body.message equal 成功(str)	==> pass
+2024-05-06 15:57:31.479 | INFO | assert body.message equal 成功(str)	==> pass
+2024-05-06 15:57:31.480 | INFO | run step end: 登录 <<<<<<
+
+2024-05-06 15:57:31.480 | INFO | run step end: 登录 <<<<<<
+
+2024-05-06 15:57:31.480 | INFO | generate testcase log: C:\Users\A1\PycharmProjects\Bluetooth App\lt\logs\558bc74b-1a04-46fa-9f80-4f487651034a.run.log
+2024-05-06 15:57:31.480 | INFO | generate testcase log: C:\Users\A1\PycharmProjects\Bluetooth App\lt\logs\558bc74b-1a04-46fa-9f80-4f487651034a.run.log

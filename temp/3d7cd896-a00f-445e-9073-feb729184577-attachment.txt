@@ -1,0 +1,13 @@
+====== request details ======
+url: https://dev-api.askstarry.com/ble/app/version
+method: GET
+params: {}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "HRUN-Request-ID": "HRUN-9e56fb6d-e313-4eff-af59-ea638b042a41-252449"
+}
+json: None

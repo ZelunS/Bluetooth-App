@@ -1,0 +1,26 @@
+====== response details ======
+status_code: 200
+headers: {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:30 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "221",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+body: {
+    "code": 200,
+    "message": "成功",
+    "timestamp": "2024-05-06 15:57:30",
+    "data": {
+        "is_forced": 0,
+        "version_num": "1.1.2",
+        "apple_store": null,
+        "google_store": null,
+        "description": "测试一下",
+        "id": 4
+    }
+}

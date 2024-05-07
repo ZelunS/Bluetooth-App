@@ -1,0 +1,17 @@
+====== request details ======
+url: https://dev-api.askstarry.com/ble/app/auth/send_verification_code
+method: POST
+params: {}
+data: None
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "version": "1.1.2",
+    "HRUN-Request-ID": "HRUN-9e56fb6d-e313-4eff-af59-ea638b042a41-253390"
+}
+json: {
+    "email": "zelun.su@amperetime.com",
+    "type": 2
+}

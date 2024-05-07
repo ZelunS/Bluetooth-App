@@ -1,0 +1,17 @@
+config:
+    name: 获取版本信息
+    export:
+        - version
+
+teststeps:
+-
+    name: 获取版本信息
+    request:
+        url: ${ENV(base_url)}/version
+        method: GET
+    validate:
+        - eq: ["status_code", 200]
+        - eq: ["body.message","成功"]
+        - contains: ["body.data", "version_num"]
+    extract:
+        version: body.data.version_num

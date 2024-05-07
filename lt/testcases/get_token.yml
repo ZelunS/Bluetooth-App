@@ -1,0 +1,28 @@
+config:
+    name: 获取Token
+    export:
+        - token
+        - version
+
+teststeps:
+-
+    name: 获取版本信息
+    testcase: testcases/get_version.yml
+
+-
+    name: 登录
+    request:
+        headers:
+            version: $version
+        url: ${ENV(base_url)}/auth/login
+        method: POST
+        json:
+            email:  ${ENV(email)}
+            password: ${ENV(password)}
+            login_type: 1
+    validate:
+        - eq: ["status_code", 200]
+        - eq: ["body.message","成功"]
+    extract:
+        token: body.data.token
+

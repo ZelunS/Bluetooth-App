@@ -1,0 +1,18 @@
+====== response details ======
+status_code: 200
+headers: {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:33 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "90",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+body: {
+    "code": 10051404,
+    "message": "The email is repeated",
+    "timestamp": "2024-05-06 15:57:33"
+}

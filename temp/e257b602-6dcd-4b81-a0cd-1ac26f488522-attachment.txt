@@ -1,0 +1,27 @@
+====== response details ======
+status_code: 200
+headers: {
+    "Server": "nginx/1.24.0",
+    "Date": "Mon, 06 May 2024 07:57:33 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "363",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "POST,OPTIONS",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Headers": "origin, content-type, accept, authorization, x-xsrf-token, x-request-id"
+}
+body: {
+    "code": 200,
+    "message": "成功",
+    "timestamp": "2024-05-06 15:57:33",
+    "data": {
+        "id": 45,
+        "uid": 900000059,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjkwMDAwMDA1OSwiZXhwIjoxNzUxMjcwMjUzLCJzdWIiOiJhY2Nlc3MifQ.kl6mBNGyES3Y5mIE4xXOCvpgjguRVfSGnKcrKrorSzs",
+        "name": null,
+        "email": "zelun.su@amperetime.com",
+        "avatar_link": null,
+        "language": "zh"
+    }
+}
