@@ -6,6 +6,10 @@ import sys
 rsa_fapath = os.path.dirname(os.path.dirname("rsa_utils/utils.py"))
 sys.path.append(rsa_fapath)
 from rsa_utils.utils import rsa_decrypt,rsa_encrypt
+gmail_fapth = os.path.dirname(os.path.dirname("getMail.py"))
+sys.path.append(gmail_fapth)
+from getMail import getMail
+import re
 
 def d_rsa_decrypt(text):
     result = rsa_decrypt(text)
@@ -14,6 +18,15 @@ def d_rsa_decrypt(text):
 def d_rsa_encrypt(text):
     result = rsa_encrypt(text)
     return result
+
+def getCode():
+    pattern = r'\b\d{6}\b'
+    mail = getMail()
+    verification_code = re.search(pattern, mail)
+    if verification_code:
+        return verification_code.group()
+    else:
+        return None
 
 def sleep(n_secs):
     time.sleep(n_secs)
@@ -64,5 +77,5 @@ def teardown_hook_example(name):
     return f"teardown_hook_example: {name}"
 
 if __name__ == '__main__':
-    reslut = d_rsa_encrypt("123456")
+    reslut = getCode()
     print(reslut)

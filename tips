@@ -1,0 +1,18 @@
+---蓝牙App接口自动化脚本使用说明---
+
+注意事项：
+1.执行脚本时需要位于项目本身位置==>Bluetooth App
+2.yml执行命令：hrun lt/文件名/xxx.yml
+3.yml文件执行时会同步更新相应py文件，直接执行py文件则不会更新对应yml
+
+编写事项：
+1.注意缩进！！！
+2.key和value之间需要有一个空格（key值变红则视为生效）
+
+使用帮助：
+1.引用其他用例时，锚点自动基准lt，所以只需要文件夹名/xxx.yml
+2.使用env配置文件参数==》${ENV(Key名)}
+3.使用debugtalk内的方法==》${方法名}
+4.提取方法默认为JMES Path，通过层级关系进行提取
+5.extract为提取关键词，需位于断言之后，同用例内无需通过export抛出
+6.支持har文件转换：hrp convert xxx.har --from-har --to-yaml

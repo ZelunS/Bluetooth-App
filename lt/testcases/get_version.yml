@@ -1,17 +1,21 @@
 config:
     name: 获取版本信息
-    export:
-        - version
 
 teststeps:
 -
+    name: 获取token
+    testcase: testcases/get_token.yml
+
+-
     name: 获取版本信息
     request:
-        url: ${ENV(base_url)}/version
+        headers:
+            Authorization: Bearer $token
+            platform: ${ENV(platform)}
+            version: ${ENV(version)}
+        url: ${ENV(base_url)}/version/last
         method: GET
     validate:
-        - eq: ["status_code", 200]
-        - eq: ["body.message","成功"]
-        - contains: ["body.data", "version_num"]
-    extract:
-        version: body.data.version_num
+        - eq: ["body.code",200]
+        - eq: ["body.message","success"]
+        - contains: ["body.data", "versionNum"]

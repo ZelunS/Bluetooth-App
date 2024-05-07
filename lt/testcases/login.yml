@@ -1,5 +1,5 @@
 config:
-    name: 获取Token
+    name: 用户登录
     export:
         - token
 
@@ -23,4 +23,3 @@ teststeps:
         - contains: ["body.data", "token"]
     extract:
         token: body.data.token
-

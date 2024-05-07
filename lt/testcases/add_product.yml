@@ -1,0 +1,97 @@
+config:
+    name: 添加设备
+
+teststeps:
+-
+    name: 获取token
+    testcase: testcases/get_token.yml
+
+-
+    name: 通过产品全量同步添加设备
+    request:
+        headers:
+            Authorization: Bearer $token
+            platform: ${ENV(platform)}
+            version: ${ENV(version)}
+        url: ${ENV(base_url)}/product/sync
+        method: POST
+        json:
+            - Inquire:
+                MOSFETTemperature:
+                    label: MOSFET温度
+                    value: 29
+                SOC:
+                    label: 电池电量
+                    value: 36
+                SOH:
+                    label: 电池健康状态
+                    value: 100%
+                batteryCount:
+                    label: 电池数量
+                    value: 4
+                batteryState:
+                    label: 电池状态
+                    value: 1
+                batteryVoltage:
+                    label: 电池电压
+                    value: 13581
+                batteryVoltage1:
+                    label: 第1节电池电压
+                    value: 3399
+                batteryVoltage2:
+                    label: 第2节电池电压
+                    value: 3394
+                batteryVoltage3:
+                    label: 第3节电池电压
+                    value: 3394
+                batteryVoltage4:
+                    label: 第4节电池电压
+                    value: 3394
+                cellTemperature:
+                    label: 电芯温度
+                    value: 13
+                current:
+                    label: 电流
+                    value: 19220
+                dischargesAHCount:
+                    label: 放电AH次数
+                    value: 17
+                dischargesCount:
+                    label: 放电次数
+                    value: 0
+                equilibriumState:
+                    label: 均衡状态
+                    value: "0"
+                failureState:
+                    label: 失效状态
+                    value: "000"
+                heat:
+                    label: 加热状态
+                    value: "00000000"
+                pack:
+                    label: pcak电压
+                    value: 13575
+                protectState:
+                    label: 保护状态
+                    value: "00000000"
+              android: C8:47:80:07:71:AE
+              badgeIcon: https://img.askstarry.com/min_jpgtest_ee9448a1507c43daad79619d28949e47.jpg
+              badgeId: 1
+              badgeTypeId: 1
+              blueToothName: LT-12100BG-A00265
+              deviceId: C8:47:80:07:71:AE
+              ecReadCharacteristicId: 0000FFE1-0000-1000-8000-00805F9B34FB
+              ecWriteCharacteristicId: 0000FFE2-0000-1000-8000-00805F9B34FB
+              pbTimestamp: 1.700127297e+12
+              serviceId: 0000FFE0-0000-1000-8000-00805F9B34FB
+              sn: ALGA010612100BG004A
+              upTimestamp: 1.700127297e+12
+              updateTime: 1.700129472263e+12
+              version:
+                Version: 1.3.0
+                functionalVersion: HT
+                hardwareVersion: T12100
+                time: 2023年10月30日
+    validate:
+        - eq: ["body.code",200]
+        - eq: ["body.message","success"]
