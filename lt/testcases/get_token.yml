@@ -1,5 +1,7 @@
 config:
     name: 获取Token
+    parameters:
+        platform: [android,ios]
     export:
         - token
 
@@ -9,7 +11,7 @@ teststeps:
     request:
         headers:
             version: ${ENV(version)}
-            platform: ${ENV(platform)}
+            platform: $platform
         url: ${ENV(base_url)}/auth/login
         method: POST
         json:
