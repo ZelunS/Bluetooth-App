@@ -1,0 +1,26 @@
+config:
+    name: 根据蓝牙名称查询产品详情
+
+teststeps:
+-
+    name: 获取token
+    testcase: comm/get_token.yml
+
+-
+    name: 获取工厂App内产品信息
+    testcase: other/get_Factory_product.yml
+
+-
+    name: 根据蓝牙名称查询产品详情-成功
+    request:
+        headers:
+            Authorization: Bearer $token
+            platform: ${ENV(platform)}
+            version: ${ENV(version)}
+        url: ${ENV(base_url)}/product/$factory_bluetoothName
+        method: GET
+    validate:
+        - eq: ["body.code",200]
+        - eq: ["body.message","success"]
+        - eq: ["body.data.bluetoothName", $factory_bluetoothName]
+        - eq: ["body.data.sn", $factory_sn]

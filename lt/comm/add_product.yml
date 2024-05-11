@@ -4,7 +4,7 @@ config:
 teststeps:
 -
     name: 获取token
-    testcase: testcases/get_token.yml
+    testcase: comm/get_token.yml
 
 -
     name: 通过产品全量同步添加设备

@@ -1,0 +1,44 @@
+config:
+    name: 用户信息接口校验
+    variables:
+        random_language: ${randomLge()}
+
+teststeps:
+-
+    name: 获取token
+    testcase: comm/get_token.yml
+
+-
+    name: 用户信息更新
+    request:
+        headers:
+            Authorization: Bearer $token
+            platform: ${ENV(platform)}
+            version: ${ENV(version)}
+        url: ${ENV(base_url)}/user/update
+        method: POST
+        json:
+            name: Auto_test
+            avatarLink: ${ENV(img_url)}
+            language: $random_language
+    validate:
+        - eq: ["body.code",200]
+        - eq: ["body.message","success"]
+
+-
+    name: 查询用户信息
+    variables:
+        avatarLink: ${ENV(img_url)}
+    request:
+        headers:
+            Authorization: Bearer $token
+            platform: ${ENV(platform)}
+            version: ${ENV(version)}
+        url: ${ENV(base_url)}/user/get
+        method: GET
+    validate:
+        - eq: ["body.code",200]
+        - eq: ["body.message","success"]
+        - eq: ["body.data.language", $random_language]
+        - eq: ["body.data.avatarLink", $avatarLink]
+

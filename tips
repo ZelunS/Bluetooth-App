@@ -16,3 +16,4 @@
 4.提取方法默认为JMES Path，通过层级关系进行提取
 5.extract为提取关键词，需位于断言之后，同用例内无需通过export抛出
 6.支持har文件转换：hrp convert xxx.har --from-har --to-yaml
+7.支持使用setup_hooks / teardown_hooks 做测试用例的前后置夹具

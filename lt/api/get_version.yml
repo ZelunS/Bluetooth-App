@@ -1,0 +1,53 @@
+config:
+    name: 获取版本信息接口校验
+
+teststeps:
+-
+    name: 获取token
+    testcase: comm/get_token.yml
+
+-
+    name: 获取版本信息
+    request:
+        headers:
+            Authorization: Bearer $token
+            platform: ${ENV(platform)}
+            version: ${ENV(version)}
+        url: ${ENV(base_url)}/version/last
+        method: GET
+    validate:
+        - eq: ["body.code",200]
+        - eq: ["body.message","success"]
+        - contains: ["body.data", "versionNum"]
+    extract:
+        nowVersion: body.data.versionNum
+
+-
+    name: 版本对比-存在新版本
+    request:
+        headers:
+            Authorization: Bearer $token
+            platform: ${ENV(platform)}
+            version: ${ENV(version)}
+        url: ${ENV(base_url)}/version/last
+        method: GET
+        params:
+            version: 0.0.1
+    validate:
+        - eq: ["body.code",10051412]
+        - eq: ["body.message","The app version not is the latest version"]
+
+-
+    name: 版本对比-相同版本
+    request:
+        headers:
+            Authorization: Bearer $token
+            platform: ${ENV(platform)}
+            version: ${ENV(version)}
+        url: ${ENV(base_url)}/version/last
+        method: GET
+        params:
+            version: $nowVersion
+    validate:
+        - eq: ["body.code",10051411]
+        - eq: ["body.message","The app version is the latest version"]

@@ -1,0 +1,49 @@
+config:
+    name: 获取工厂App内的产品信息
+    export:
+        - factory_bluetoothName
+        - factory_sn
+
+teststeps:
+#-
+#    name: 获取工厂App Token
+#    testcase: other/get_Factory_token.yml
+
+-
+    name: 获取产品信息总数
+    request:
+#        headers:
+#            Authorization: Bearer $factory_token
+        url: ${ENV(factory_url)}/product/page
+        method: GET
+        params:
+            brand: LT
+            status: 1
+            page: 1
+            pageSize: 10000
+    validate:
+        - eq: ["body.code",200]
+        - eq: ["body.message","success"]
+    extract:
+        total: body.data.total
+
+-
+    name: 获取随机产品信息
+    variables:
+        num: ${randomChoice($total)}
+    request:
+#        headers:
+#            Authorization: Bearer $factory_token
+        url: ${ENV(factory_url)}/product/page
+        method: GET
+        params:
+            brand: LT
+            status: 1
+            page: 1
+            pageSize: 10000
+    validate:
+        - eq: ["body.code",200]
+        - eq: ["body.message","success"]
+    extract:
+        factory_bluetoothName: body.data.records[$num].bluetoothName
+        factory_sn: body.data.records[$num].sn

@@ -1,0 +1,24 @@
+config:
+    name: 用户反馈接口校验
+
+teststeps:
+-
+    name: 获取token
+    testcase: comm/get_token.yml
+
+-
+    name: 新增用户反馈
+    request:
+        headers:
+            Authorization: Bearer $token
+            platform: ${ENV(platform)}
+            version: ${ENV(version)}
+        url: ${ENV(base_url)}/feedback/save
+        method: POST
+        json:
+            sn: 123456789123456789
+            info: ${generate_random_string(300)}
+            contactInformation: 联系方式
+    validate:
+        - eq: ["body.code",200]
+        - eq: ["body.message","success"]

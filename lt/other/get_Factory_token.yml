@@ -1,0 +1,21 @@
+#config:
+#    name: 获取工厂App Token
+#    export:
+#        - factory_token
+#
+#teststeps:
+#-
+#    name: 登录
+#    request:
+#        url: ${ENV(factory_url)}/auth/login
+#        method: POST
+#        json:
+#            email:  ${ENV(factory_email)}
+#            password: ${ENV(factory_password)}
+#    validate:
+#        - eq: ["body.code",200]
+#        - eq: ["body.message","success"]
+#        - eq: ["body.data.email","zelun.su@amperetime.com"]
+#        - contains: ["body.data", "token"]
+#    extract:
+#        factory_token: body.data.token

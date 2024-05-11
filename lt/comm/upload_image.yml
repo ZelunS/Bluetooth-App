@@ -1,0 +1,27 @@
+#config:
+#    name: 图片上传
+#    export:
+#        - imageUrl
+#
+#teststeps:
+#-
+#    name: 获取token
+#    testcase: comm/get_token.yml
+#
+#-
+#    name: 图片上传
+#    request:
+#        headers:
+#            Authorization: Bearer $token
+#            platform: ${ENV(platform)}
+#            version: ${ENV(version)}
+#        url: ${ENV(base_url)}/upload/image
+#        method: POST
+#        json:
+#            image:
+#    validate:
+#        - eq: ["body.code",200]
+#        - eq: ["body.message","success"]
+#        - contains: ["body.data", "imageUrl"]
+#    extract:
+#        imageUrl: body.data.imageUrl
